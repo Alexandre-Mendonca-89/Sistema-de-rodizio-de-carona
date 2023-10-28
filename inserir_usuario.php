@@ -13,7 +13,7 @@ if(!isset($_SESSION["auth"])){
 	<title>Inserir Usuário</title>
 </head>
 <body>
-	<form action="salvar_usuario.php" method="POST">
+	<form action="/WEB_1/Projeto_2/carona/salvar_usuario.php" method="POST">
 		  <label for="nome">Nome:</label><br>
 		  <input type="text" id="nome" name="nome" placeholder="nome"><br><br>
 
@@ -26,8 +26,8 @@ if(!isset($_SESSION["auth"])){
 		  <label for="turno">Turno:</label><br>
 		  <input type="text" id="turno" name="turno" placeholder="turno"><br><br>
 
-		  <label for="descricao">Descricao:</label><br>
-		  <input type="text" id="descricao" name="descricao" placeholder="descricao"><br><br>
+		  <label for="descricao">Descricao destino:</label><br>
+		  <input type="text" id="descricao" name="descricao" placeholder="descricao destino"><br><br>
 
 		  <label for="login">Login:</label><br>
 		  <input type="text" id="login" name="login" placeholder="login"><br><br>

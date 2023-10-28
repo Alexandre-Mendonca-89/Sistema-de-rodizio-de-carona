@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["auth"])){
-		header("Location:index.php");
+		header("Location:/WEB_1/Projeto_2/carona/index.php");
 		die();
 	}
 	include_once 'conexao.php';

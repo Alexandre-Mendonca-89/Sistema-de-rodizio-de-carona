@@ -2,7 +2,7 @@
     session_start();
     //var_dump($_SESSION);
     if(isset($_SESSION["auth"])){
-        header("Location:listar_usuario.php");
+        header("Location:/WEB_1/Projeto_2/carona/listar_usuario.php");
         die();
     }
 ?>
@@ -117,9 +117,9 @@ body {
 </head>
 <body>
     <div class="page">
-        <form method="POST" action="logar.php" class="formLogin">
+        <form method="POST" action="/WEB_1/Projeto_2/carona/logar.php" class="formLogin">
             <h1>Login de Usuario</h1>
-            <p>Digite os seus dados de acesso nos campos abaixo.</p>
+            <p>Digite os seus dados de acesso nos campos abaixo</p>
             <label for="login">Login</label>
             <input type="text" name="login" placeholder="Digite seu login" autofocus="true" />
             <label for="senha">Senha</label>

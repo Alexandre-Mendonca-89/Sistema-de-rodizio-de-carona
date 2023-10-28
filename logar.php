@@ -18,11 +18,11 @@
 		$_SESSION["auth"]=true;
 		$_SESSION["id"]=$dados["id"];
 		$_SESSION["nome"]=$dados["nome"];
-		header("Location:listar_usuario.php");
+		header("Location:/WEB_1/Projeto_2/carona/listar_usuario.php");
 		die();
 
 	}else{
-		//header("Location:index.php");
+		header("Location:index.php");
 		die();
 	}
 

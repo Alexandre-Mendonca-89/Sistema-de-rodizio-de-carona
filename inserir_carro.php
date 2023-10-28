@@ -13,7 +13,7 @@ if(!isset($_SESSION["auth"])){
 	<title>Inserir Carro</title>
 </head>
 <body>
-	<form action="salvar_usuario.php" method="POST">
+	<form action="/WEB_1/Projeto_2/carona/salvar_usuario.php" method="POST">
 		  <label for="marca">Marca:</label><br>
 		  <input type="text" id="marca" name="marca" placeholder="marca"><br>
 

@@ -3,7 +3,7 @@
 	include_once 'conexao.php';
 	$conexao=conecta();
 	if(!isset($_SESSION["auth"])){
-		header("Location:index.php");
+		header("Location:/WEB_1/Projeto_2/carona/index.php");
 		die();
 	}
 	$id=$_SESSION['id'];
@@ -93,9 +93,9 @@
 				<td><?php echo $pessoa["cpf"]?></td>
 				<td><?php echo $pessoa["turno"]?></td>
 				<td><?php echo $pessoa["descricao"]?></td>
-				<td> <a class="inserir_usuario" href="inserir.php">Inserir usuario</a> </td>
-				<td> <a class="editar_usuario" href="editar_usuario.php?id=<?php echo $pessoa['id']?>">Editar Usuario</a> </td>
-				<td> <a class="excluir" href="excluir_usuario.php?id=<?php echo $pessoa['id']?>">Excluir Usuario</a> </td>
+				<td> <a class="inserir_usuario" href="/WEB_1/Projeto_2/carona/inserir_usuario.php">Inserir usuario</a> </td>
+				<td> <a class="editar_usuario" href="/WEB_1/Projeto_2/carona/editar_usuario.php?id=<?php echo $pessoa['id']?>">Editar Usuario</a> </td>
+				<td> <a class="excluir" href="/WEB_1/Projeto_2/carona/excluir_usuario.php?id=<?php echo $pessoa['id']?>">Excluir Usuario</a> </td>
 				</tr>
 				<?php
 			}

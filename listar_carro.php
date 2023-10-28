@@ -3,7 +3,7 @@
 	include_once 'conexao.php';
 	$conexao=conecta();
 	if(!isset($_SESSION["auth"])){
-		header("Location:index.php");
+		header("Location:/WEB_1/Projeto_2/carona/index.php");
 		die();
 	}
 	$id=$_SESSION['id'];
@@ -95,9 +95,9 @@
 				<td><?php echo $veiculo["cor"]?></td>
 				<td><?php echo $veiculo["qtd_lugares"]?></td>
 				<td><?php echo $veiculo["consumo"]?></td>
-				<td> <a class="inserir_carro" href="inserir_carro.php">Inserir Carro</a> </td>
-				<td> <a class="editar_carro" href="editar_carro.php?id=<?php echo $veiculo['id']?>">Editar Carro</a> </td>
-				<td> <a class="excluir_carro" href="excluir_carro.php?id=<?php echo $veiculo['id']?>">Excluir Carro</a> </td>
+				<td> <a class="inserir_carro" href="/WEB_1/Projeto_2/carona/inserir_carro.php">Inserir Carro</a> </td>
+				<td> <a class="editar_carro" href="/WEB_1/Projeto_2/carona/editar_carro.php?id=<?php echo $veiculo['id']?>">Editar Carro</a> </td>
+				<td> <a class="excluir_carro" href="/WEB_1/Projeto_2/carona/excluir_carro.php?id=<?php echo $veiculo['id']?>">Excluir Carro</a> </td>
 				</tr>
 				<?php
 			}

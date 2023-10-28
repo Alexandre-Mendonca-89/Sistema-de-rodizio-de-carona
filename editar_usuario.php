@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["auth"])){
-	header("Location:index.php");
+	header("Location:/WEB_1/Projeto_2/carona/index.php");
 	die();
 }
 include_once 'conexao.php';
@@ -19,7 +19,7 @@ $dados=mysqli_fetch_assoc($dados);
 	<title>Editar Usuário</title>
 </head>
 <body>
-	<form action="atualizar_usuario.php" method="POST">
+	<form action="/WEB_1/Projeto_2/carona/atualizar_usuario.php" method="POST">
 		  <input type="hidden" id="id" name="id" value="<?php echo $dados['id']?>"><br>
 
 		  <label for="nome">Nome:</label><br>

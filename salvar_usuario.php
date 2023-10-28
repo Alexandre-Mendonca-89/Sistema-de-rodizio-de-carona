@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["auth"])){
-		header("Location:index.php");
+		header("Location:/WEB_1/Projeto_2/carona/index.php");
 		die();
 	}
 	include_once 'conexao.php';
@@ -10,7 +10,7 @@
 	preg_match('~[0-9]+~',$nome,$n);
 	var_dump(is_numeric($nome));
 	if($n){
-		header("Location:inserir_usuario.php");
+		header("Location:/WEB_1/Projeto_2/carona/inserir_usuario.php");
 		die();
 	}
 	$idade=$_POST["idade"];
@@ -24,6 +24,6 @@
 	if(mysqli_errno($conexao)!=0){
 		echo "Erro ao salvar os dados do usuario";
 	}else{
-		header("Location:listar_usuario.php");
+		header("Location:/WEB_1/Projeto_2/carona/listar_usuario.php");
 	}
 ?>

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["auth"])){
-		header("Location:index.php");
+		header("Location:/WEB_1/Projeto_2/carona/index.php");
 		die();
 	}
 	include_once 'conexao.php';
@@ -10,7 +10,7 @@
 	preg_match('~[0-9]+~',$marca,$n);
 	var_dump(is_numeric($marca));
 	if($n){
-		header("Location:inserir_carro.php");
+		header("Location:/WEB_1/Projeto_2/carona/inserir_carro.php");
 		die();
 	}
 	$modelo=$_POST["modelo"];
