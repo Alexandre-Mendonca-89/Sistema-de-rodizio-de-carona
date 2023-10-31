@@ -1,9 +1,5 @@
 <?php
-	session_start();
-	if(!isset($_SESSION["auth"])){
-		header("Location:/WEB_1/Projeto_2/carona/index.php");
-		die();
-	}
+	
 	include_once 'conexao.php';
 	$conexao=conecta();
 	$nome=$_POST["nome"];
@@ -24,6 +20,6 @@
 	if(mysqli_errno($conexao)!=0){
 		echo "Erro ao salvar os dados do usuario";
 	}else{
-		header("Location:/WEB_1/Projeto_2/carona/listar_usuario.php");
+		header("Location:/WEB_1/Projeto_2/carona/mensagem_usuario.php");
 	}
 ?>

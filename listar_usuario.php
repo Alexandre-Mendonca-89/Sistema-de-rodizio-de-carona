@@ -38,32 +38,32 @@
 			color: black;
 			text-align: center;
 		}
-		.inserir{
+		.inserir_usuario{
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
-		}.editar{
+		}.editar_usuario{
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #32CD32 inset, 0 0 0 0 #32CD32;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
-		}.excluir {
+		}.excluir_usuario {
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #FF0000 inset, 0 0 0 0 #FF0000;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
 		}
-		.inserir:hover {
+		.inserir_usuario:hover {
 			box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 		}
-		.editar:hover {
+		.editar_usuario:hover {
 			box-shadow: 0 0 10px 0 #32CD32 inset, 0 0 10px 4px #32CD32;
 		}
-		.excluir:hover {
+		.excluir_usuario:hover {
 			box-shadow: 0 0 10px 0 #FF0000 inset, 0 0 10px 4px #FF0000;
 		}
 
@@ -95,7 +95,7 @@
 				<td><?php echo $pessoa["descricao"]?></td>
 				<td> <a class="inserir_usuario" href="/WEB_1/Projeto_2/carona/inserir_usuario.php">Inserir usuario</a> </td>
 				<td> <a class="editar_usuario" href="/WEB_1/Projeto_2/carona/editar_usuario.php?id=<?php echo $pessoa['id']?>">Editar Usuario</a> </td>
-				<td> <a class="excluir" href="/WEB_1/Projeto_2/carona/excluir_usuario.php?id=<?php echo $pessoa['id']?>">Excluir Usuario</a> </td>
+				<td> <a class="excluir_usuario" href="/WEB_1/Projeto_2/carona/excluir_usuario.php?id=<?php echo $pessoa['id']?>">Excluir Usuario</a> </td>
 				</tr>
 				<?php
 			}

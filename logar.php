@@ -3,7 +3,7 @@
 	include_once 'conexao.php';
 	$conexao=conecta();
 	$login=$_POST["login"];
-	$senha=($_POST["senha"]);
+	$senha=md5($_POST["senha"]);
 
 	$stmt=$conexao->prepare("SELECT * FROM `usuario` WHERE login=? and senha=? ; ");
 	$stmt->bind_param("ss", $login, $senha);
