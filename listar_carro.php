@@ -12,7 +12,6 @@
 	//var_dump($_SESSION);
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,32 +37,32 @@
 			color: black;
 			text-align: center;
 		}
-		.inserir{
+		.inserir_carro{
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
-		}.editar{
+		}.editar_carro{
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #32CD32 inset, 0 0 0 0 #32CD32;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
-		}.excluir {
+		}.excluir_carro {
 			border-color: #3498db;
 			color: #fff;
 			box-shadow: 0 0 40px 40px #FF0000 inset, 0 0 0 0 #FF0000;
 			-webkit-transition: all 150ms ease-in-out;
 			transition: all 150ms ease-in-out;
 		}
-		.inserir:hover {
+		.inserir_carro:hover {
 			box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 		}
-		.editar:hover {
+		.editar_carro:hover {
 			box-shadow: 0 0 10px 0 #32CD32 inset, 0 0 10px 4px #32CD32;
 		}
-		.excluir:hover {
+		.excluir_carro:hover {
 			box-shadow: 0 0 10px 0 #FF0000 inset, 0 0 10px 4px #FF0000;
 		}
 
@@ -103,6 +102,10 @@
 			}
 			?>
 		</table>
+		<p>Clique no botão ao lado para voltar no menu inicial:
+        <a class="w3-button w3-green w3-round-xlarge" href="menu_inicial.php">Menu Inicial</a></p>
+		<p>Clique no botão ao lado para listar de carona:
+        <a class="w3-button w3-green w3-round-xlarge" href="listar_usuario.php">Lista de usuario</a></p>
 		<p>Clique no botão ao lado para deslogar do sistema:
         <a class="w3-button w3-green w3-round-xlarge" href="logout.php">Sair</a></p>
         

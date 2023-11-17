@@ -101,6 +101,10 @@
 			}
 			?>
 		</table>
+		<p>Clique no botão ao lado para voltar no menu inicial:
+        <a class="w3-button w3-green w3-round-xlarge" href="menu_inicial.php">Menu Inicial</a></p>
+		<p>Clique no botão ao lado para listar de carona:
+        <a class="w3-button w3-green w3-round-xlarge" href="listar_carro.php">Lista de carona</a></p>
 		<p>Clique no botão ao lado para deslogar do sistema:
         <a class="w3-button w3-green w3-round-xlarge" href="logout.php">Sair</a></p>
         

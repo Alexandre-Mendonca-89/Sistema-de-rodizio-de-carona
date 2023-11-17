@@ -13,15 +13,15 @@ if(!isset($_SESSION["auth"])){
 	<title>Inserir Carro</title>
 </head>
 <body>
-	<form action="/WEB_1/Projeto_2/carona/salvar_usuario.php" method="POST">
+	<form action="/WEB_1/Projeto_2/carona/salvar_carro.php" method="POST">
 		  <label for="marca">Marca:</label><br>
-		  <input type="text" id="marca" name="marca" placeholder="marca"><br>
+		  <input type="text" id="marca" name="marca" placeholder="marca"><br><br>
 
 		  <label for="modelo">modelo:</label><br>
-		  <input type="text" id="modelo" name="modelo" placeholder="modelo"><br>
+		  <input type="text" id="modelo" name="modelo" placeholder="modelo"><br><br>
 
 		  <label for="ano">Ano:</label><br>
-		  <input type="text" id="ano" name="ano" placeholder="ano"><br>
+		  <input type="text" id="ano" name="ano" placeholder="ano"><br><br>
 
 		  <label for="cor">Cor:</label><br>
 		  <input type="text" id="cor" name="cor" placeholder="cor"><br><br>

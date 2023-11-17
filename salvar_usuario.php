@@ -20,6 +20,6 @@
 	if(mysqli_errno($conexao)!=0){
 		echo "Erro ao salvar os dados do usuario";
 	}else{
-		header("Location:/WEB_1/Projeto_2/carona/mensagem_usuario.php");
+		header("Location:/WEB_1/Projeto_2/carona/mensagem_carro.php");
 	}
 ?>
